@@ -1,0 +1,175 @@
+body{
+    margin:50px;
+    padding:0;
+    background:#b8968b;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*------------------------------------CALCULATOR CSS------------------------------------*/ 
+
+#container-calculator{
+    float: left;
+    width: 1000px;
+    height: 550px;
+    margin:auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#container-calculator h2{
+    color: #ffffff;
+    text-align: center;
+    padding-top:5;
+}
+
+#calculator{
+    width:320px;
+    height: 520px;
+    background-color: white;
+    margin: 0 auto;
+    top:75px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#result{
+    height: 120px;
+}
+#keyboard{
+    height: 400px;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: #919191;
+}
+#output{
+    text-align: right;
+    height:60px ;
+    margin:10px 20px ;
+    font-size:32px;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius:50% ;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number, .empty{
+    background-color: white;
+
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 14px;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline:0;
+}
+button:nth-child(4){
+    font-size: 20px;
+    background-color: sandybrown;
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color:rgb(228, 130, 130);
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: rgb(96, 190, 244);
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: rgb(231, 216, 84);
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: rgb(77, 187, 49);
+}
+ 
+/*------------------------------------TO TO LIST CSS------------------------------------*/ 
+
+#container-to-dolist h2{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 17px;
+}
+
+
+.todo{
+    width: 350px;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    padding: 15px;
+    overflow-y:auto;
+    align-items: center;
+    margin:110px auto;
+}
+#input{
+    height: 50px;
+    width: 80%;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    background: #e9e5e5;
+    padding: 0 10px;
+    margin: 15px;
+}
+#input::placeholder{
+    height: 50px;
+    width: 80%;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+    background: #e9e5e5;
+    padding: 0 10px;
+    margin: 15px;
+    color: #bbbbbb;
+}
+ul li{
+    width: 85%;
+    list-style-type: none;
+    background: #e9e5e5;
+    color:#333333;
+    height: 40px;
+    border-radius: 50px;
+    margin:15px 0;
+    padding: 22px 4px 2px 25px;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+ul{
+    padding-left: 20px;
+}
+
+ul .fa-check, .fa-trash{
+    position: absolute;
+    cursor: pointer;
+}
+ul .fa-check {
+    right:350px;
+    color: green;
+}
+ul .fa-trash {
+    right:325px;
+    color: #ff0033;
+}
+ul .checked {
+    background: lightgreen;
+    text-decoration: line-through;
+    transition: .2s;
+
+}
